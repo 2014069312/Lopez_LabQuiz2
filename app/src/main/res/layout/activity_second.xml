@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lopez_labquiz2.SecondActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvDisplayAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="#1995ad"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDisplayQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvDisplayAuthor"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tvDisplayQuote"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#1995ad"
+        android:onClick="GoBack"
+        android:text="BACK"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
